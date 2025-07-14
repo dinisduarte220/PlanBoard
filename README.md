@@ -6,7 +6,7 @@ Use PlanBoard to help your team build your next project.
 - Find out more!
 
 # Images
-### Home Page
-<img src="github-images/image1.png" width="800"/>
-<img src="github-images/image2.png" width="800"/>
-<img src="github-images/image3.png" width="800"/>
+### Home Page + Color Palette
+<img src="github-images/homePage1.png" width="600"/>
+<img src="github-images/homePage2.png" width="600"/>
+<img src="github-images/homePage3.png" width="600"/>
