@@ -1,0 +1,132 @@
+:root {
+  --primary-color: whitesmoke;
+  --secundary-color: rgb(25, 25, 25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  user-select: none;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+/* Main Content */
+#mainContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#mainContent h1 {
+  font-size: 4rem;
+  color: var(--secundary-color);
+  animation: title_anim 1s ease-in-out;
+}
+@keyframes title_anim {
+  from {
+    opacity: 0;
+    scale: .5;
+  }
+}
+#mainContent p {
+  font-weight: 600;
+  color: var(--secundary-color);
+}
+#mainContent button {
+  /* width: 10rem; */
+  padding: 10px 10px 10px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: var(--secundary-color);
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 1px 1px 15px var(--secundary-color);
+  transition: box-shadow .3s;
+  cursor: pointer;
+}
+#mainContent button i {
+  font-size: 20px;
+  vertical-align: -3px;
+}
+#mainContent button:hover {
+  /* opacity: .7; */
+  box-shadow: 1px 1px 25px var(--secundary-color);
+}
+
+/* Credits */
+#credits {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secundary-color);
+}
+#credits a {
+  text-decoration: none;
+}
+
+/* Theme */
+#theme {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+#theme button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  z-index: 9999;
+  background-color: var(--primary-color);
+}
+#theme button i {
+  font-size: 20px;
+  color: var(--secundary-color);
+}
+#theme #themePallete {
+  position: absolute;
+  right: -5px;
+  bottom: calc(10px - (.5rem / 2));
+  height: 3rem;
+  background-color: var(--secundary-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 5px 0 5px; /* Right padding to cover theme button + padding; Left padding normal */
+  border-radius: 50px;
+  /* animation: theme_anim .15s ease-in-out; */
+  width: 2.5rem;
+  transition: width .3s;
+  z-index: -1;
+}
+/* @keyframes theme_anim {
+  0% {
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 10px;
+    right: 0;
+    padding: 0;
+  }
+} */
+#theme #themePallete .themeColor {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: all;
+  transition: filter .3s;
+}
+#theme #themePallete .themeColor:hover {
+  filter: brightness(.8);
+}

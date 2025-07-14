@@ -1,0 +1,25 @@
+{
+  "name": "planboard",
+  "version": "1.0.0",
+  "description": "Use PlanBoard to help your team build your next project. - Add features, ideas, and to-dos - Invite other developers to your project and assign them tasks - Plan ideas and turn them into reality - Find out more!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinisduarte220/PlanBoard.git"
+  },
+  "author": "Dinis Duarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dinisduarte220/PlanBoard/issues"
+  },
+  "homepage": "https://github.com/dinisduarte220/PlanBoard#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "path": "^0.12.7"
+  }
+}
